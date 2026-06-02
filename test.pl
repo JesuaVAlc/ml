@@ -38,7 +38,7 @@ sub viterbi {
     }
 
     # Termination
-    my $last_t     = $#$observations;
+    my $last_t     = @$observations;
     my $best_prob  = 0;
     my $best_state = undef;
 
